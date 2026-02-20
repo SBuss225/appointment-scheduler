@@ -1,8 +1,11 @@
 namespace app.Models
 {
-  public class AppointmentInfoRequest(Doctor doctorId, int personId, string appointmentTime, bool isNewPatientAppointment, int requestId)
+  public class AppointmentInfoRequest(Doctor doctorId, int personId, DateTime appointmentTime, bool isNewPatientAppointment, int requestId)
   {
-        // TODO: add param validation
-
+    public Doctor doctorId = doctorId;
+    public int personId = personId;
+    public DateTime appointmentTime = appointmentTime;
+    public bool isNewPatientAppointment = isNewPatientAppointment;
+    public int requestId = requestId;
   }
 }
